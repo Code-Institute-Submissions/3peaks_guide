@@ -1,0 +1,21 @@
+/* <!--Navbar--> */
+
+.top-nav-color {
+    background-color: #2781ab;
+}
+.navbar {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+
+#navbarNavDropdown {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    position: relative;
+    margin: 25px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
