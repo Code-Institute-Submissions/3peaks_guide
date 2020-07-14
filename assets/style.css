@@ -1,4 +1,40 @@
-/* <!--Navbar--> */
+@import url('"https://fonts.googleapis.com/css?family=Lato|Odibee+Sans|Oswald|Roboto&display=swap"');
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    font-family: 'lato';
+
+}
+
+h3 {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+h4 {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+}
+
+h5 {
+    color: white;
+}
+
+h6 {
+    font-family: 'odibee';
+    text-transform: uppercase;
+}
+
+/* NavBar */
 
 .top-nav-color {
     background-color: #2781ab;
@@ -18,4 +54,50 @@
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+}
+
+/* Hero Image */
+
+#top-jumbo {
+    margin-bottom: 0;
+    padding: 0;
+    
+
+}
+
+.banner {
+    height: 25em;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+/* #hero { */
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    /* padding-top: 5px; */
+    /* padding-bottom: 5px; */
+    /* height: 500px; */
+    /* display: block; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* width: auto; */
+
+
+
+}
+
+/* About */
+
+.about {
+    font-family: 'Oswald';
+    padding-top: 50px;
+    font-size: 22px;
+    color: white;
+    background-color: #576B7E;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+    
 }
