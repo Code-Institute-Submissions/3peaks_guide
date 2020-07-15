@@ -1,68 +1,19 @@
-var locations = [
-	//code adapted from google developers
-	["Blagdon Lake", 51.3348101, -2.7040838, 2],
-];
-var map;
-//create map object
-function initMap() {
-	map = new google.maps.Map(document.getElementsByClassName("map-custom")[0], {
-		center: {
-			lat: 51.3348101,
-			lng: -2.7040838
-		},
-		zoom: 9
-	});
-
-	//call map window& create marker variable
-	var infowindow = new google.maps.InfoWindow();
-
-	var marker, i;
-
-	for (i = 0; i < locations.length; i++) {
-		marker = new google.maps.Marker({
-			position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-			map: map
-		});
-
-		//add event listener, set markers to locations
-		google.maps.event.addListener(marker, "click", (function (marker, i) {
-			return function () {
-				infowindow.setContent(locations[i][0]);
-				infowindow.open(map, marker);
-			};
-		})(marker, i));
-	}
-}
 
 
 
 // slide show
 
-var slideIndex = 1;
-showSlides(slideIndex);
+var slideIndex = 0;
+showSlides();
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
+function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
 }

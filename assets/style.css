@@ -37,7 +37,7 @@ h6 {
 /* NavBar */
 
 .top-nav-color {
-    background-color: #2f8245;
+    background-color: #1d4528;
 }
 .navbar {
     -webkit-box-pack: end;
@@ -110,6 +110,10 @@ h6 {
 
 /* Slide show */
 
+.slideshow {
+    background: #25c251;
+}
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -117,6 +121,8 @@ h6 {
   max-width: 500px;
   position: relative;
   margin: auto;
+  padding-top: 20px;
+  
 }
 
 /* Hide the images by default */
@@ -165,7 +171,7 @@ h6 {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
-  position: absolute;
+  position: relative;
   top: 0;
 }
 
@@ -203,12 +209,39 @@ h6 {
   to {opacity: 1}
 }
 
+
+
+/* Contact */
+
+.contact {
+    font-family: 'Oswald';
+    padding-top: 25px;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(69, 118, 163);
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+    
+    
+}
+
+.form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-align {
+    align-content: center;
+}
+
+
 /* Footer */
 
 footer {
     height: 125px;
     width: 100%;
-    background-color: #2f8245;
+    background-color: #1d4528;
     color: white;
     padding-top: 25px;
     padding-bottom: 25px;
