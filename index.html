@@ -12,17 +12,7 @@
 	<link href="assets/style.css" rel="stylesheet" type="text/css">
     
 
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("user_vGU9tAas9RgLcBQirlbWv");
-      
-   })();
-</script>
-
-    <title>3 Peaks Challenge</title>
+ <title>3 Peaks Challenge</title>
 </head>
 <body>
     <header>
@@ -56,9 +46,8 @@
                 <div class="row">
                     <div class="col-sm">
                         <p class="text-center">
-                            The Walking People
 
-                            The Walking People is a volunteer group set up in 2016. We aim to provide guidance and planning to individuals and groups taking part in walking challenges and events.
+                            The Walking People was set up in 2016 by a group of Walking enthusiasts. With a shared love for the outdoors and sense of adventure, We aim to provide guidance and planning to individuals and groups taking part in walking challenges and events.
 
                             We offer advice on training, event planning, equipment basics and much more dependant on the challenge you completing.
 
@@ -101,39 +90,43 @@
 
 <!-- Contact -->
 
-        <section id="contact">
-            <div class="contact">
-                <h3 class="text-center">Free Planning Guide</h3>
-                <form onsubmit="return sendMail(this);">
-                    <div class="form">
-                        <div class="form-align">
-                        <div class="form-group row">
-                            <div class="col-sm">
-                                <input type="text" class="form-control" placeholder="First name" required>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-sm">
-                                <input type="text" class="form-control" placeholder="Last name" required>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-sm">
-                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-sm-6">
-                                <div class="text-center">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>    
+        
+
+
+
+<section id="contact">
+<div id="contact-form">
+<h3>Free Guide</h3>
+<p>Submit details below to receive your comprehensive Walking People guide</p>
+<form id="myform" method="post">
+<label>Full Name</label>
+<input type="text" name="from_name" />
+<label>Email Address</label>
+<input type="email" required name="from_email" />
+<br><br>
+<button>
+Send
+</button>
+</form>
+</div>
+</section>
+
+
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_vGU9tAas9RgLcBQirlbWv");
+   })();
+</script>
+
+</section>
+
+
+
+
 </main>
 <!--Footer-->
 
@@ -149,22 +142,24 @@
         </div>
     </footer>
 
-<script src="assets/js/sendEmail.js"></script>
-<!--  -->
+
+
+
+
 
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3voYuJPggNKICI88qdzDmOLuXqaSuKps&callback=initMap">
     </script>
     <script src="assets/js/map.js"></script> <script>
     function initMap() {
-  // The location of Uluru
+  // The location of Three Peaks
   var snowdon = {lat: 53.0680, lng: -4.0720};
   var nevis = {lat: 56.7690, lng: -5.0347};
   var pike = {lat: 54.4525, lng: -3.2069};
-  // The map, centered at Uluru
+  // The map, centered at Snowdon
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 5, center: snowdon});
-  // The marker, positioned at Uluru
+  // The marker, positioned at Three Peaks Locations
   
 
   var marker1 = new google.maps.Marker({position: snowdon, map: map, animation: google.maps.Animation.DROP});
@@ -203,7 +198,8 @@ function showSlides() {
 
 
 
-
+<script src="assets/js/emailjs.js"></script>
+<script src="assets/js/map.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 	integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
 </script>
