@@ -15,13 +15,13 @@ p {
 }
 
 h3 {
-    font-family: 'Grenze Gotisch';
+    font-family: 'Roboto','Arial';
     text-transform: uppercase;
     padding-bottom: 30px;
 }
 
 h4 {
-    font-family: 'Oswald';
+    font-family: 'Oswald','Arial';
     text-transform: uppercase;
 }
 
@@ -30,7 +30,7 @@ h5 {
 }
 
 h6 {
-    font-family: 'odibee';
+    font-family: 'odibee', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
 }
 
