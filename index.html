@@ -10,6 +10,7 @@
 	<script src="https://kit.fontawesome.com/1f152f0653.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Lato|Odibee+Sans|Oswald|Roboto&display=swap" rel="stylesheet">
 	<link href="assets/style.css" rel="stylesheet" type="text/css">
+    
 
 <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
@@ -27,7 +28,7 @@
     <header>
         <div class="top-nav-color">
             <nav class="navbar navbar-dark navbar-expand-md">
-            <a class="navbar-brand" href="#">The 3 Peaks Challenge Guide</a>
+            <a class="navbar-brand" href="#">The Walking People</a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
                 data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -46,7 +47,7 @@
 
     <!-- Hero Image -->
      <section id="top-jumbo" class="jumbotron big-banner">
-            <img id="hero" alt="Image of Group Session" src="assets/images/bennevis.png">
+            <img id="hero" alt="ben nevis" src="assets/images/bennevis.png">
     </section>
     <!-- about -->
     <main>
@@ -54,6 +55,15 @@
             <div class="about">
                 <div class="row">
                     <div class="col-sm">
+                        <p class="text-center">
+                            The Walking People
+
+                            The Walking People is a volunteer group set up in 2016. We aim to provide guidance and planning to individuals and groups taking part in walking challenges and events.
+
+                            We offer advice on training, event planning, equipment basics and much more dependant on the challenge you completing.
+
+
+                        </p>
                         <p class="text-center">
                             National Three Peaks Challenge
 
@@ -73,7 +83,7 @@
         </section>
 
     <!-- Map with Markers-->
-        <section id="container">
+        <section id="thepeaks">
             <div id="map">
                 <div class="row">
                     <div class="col-sm">
@@ -83,53 +93,8 @@
             
          </section> 
 
-    <!--Free Guide sign up-->
+   
 
-    
-
-    <!-- Slideshow container -->
-        <section class="slideshow">
-            <div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3
-                </div>
-                <img src="assets/images/slidenevis.png" style="width:100%">
-                 <div class="text">Ben Nevis
-                 </div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3
-                </div>
-                <img src="assets/images/slidepike.png" style="width:100%">
-                <div class="text">Scafell Pike
-                </div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3
-                </div>
-                <img src="assets/images/slidesnowdon.png" style="width:100%">
-            <div class="text">Mount Snowdon</div>
-            </div>
-            </div>
-        
-
-  <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            <br>
-
-<!-- The dots/circles -->
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-        </section>
 
 
             
@@ -194,22 +159,51 @@
     function initMap() {
   // The location of Uluru
   var snowdon = {lat: 53.0680, lng: -4.0720};
-  var nevis = {lat: 56.7969, lng: 5.0036};
+  var nevis = {lat: 56.7690, lng: -5.0347};
+  var pike = {lat: 54.4525, lng: -3.2069};
   // The map, centered at Uluru
   var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: snowdon});
+      document.getElementById('map'), {zoom: 5, center: snowdon});
   // The marker, positioned at Uluru
-  var marker1 = new google.maps.Marker({position: snowdon, map: map});
-  var marker2 = new google.maps.Marker({position: nevis, map: map});
+  
+
+  var marker1 = new google.maps.Marker({position: snowdon, map: map, animation: google.maps.Animation.DROP});
+  var marker2 = new google.maps.Marker({position: nevis, map: map, animation: google.maps.Animation.DROP});
+  var marker3 = new google.maps.Marker({position: pike, map: map, animation: google.maps.Animation.DROP});
+
+    }
     
-   
-<!--  -->
+</script>
+
+<!-- slideshow -->
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 10000); // Change image every 2 seconds
+}
+</script>
 
 
 
 
 
-<script src="assets/js/slides.js"></script>
+
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 	integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
 </script>
