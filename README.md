@@ -1,39 +1,101 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# The Walking People
 
-Welcome mattamo90,
+This project was designed to create an interactive web page for users of a fictional volunteer group.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
 
-## Gitpod Reminders
+### UX
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The web page was created for a ficitonal volunteer group "The Walking People"
 
-`python3 -m http.server`
+##### User Story:
 
-A blue button should appear to click: *Make Public*,
+User - Potential Customers/Clients
 
-Another blue button should appear to click: *Open Browser*.
+I want to be able to find out the following:
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Services available;
+How good the service is? (Reviews);
+How to get in touch?;
 
-A blue button should appear to click: *Make Public*,
+User - Business Owner:
 
-Another blue button should appear to click: *Open Browser*.
+I want to be able to provide the following:
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+Be able to give potential customers a basic overview of what services are provided.
+Answer as many questions as possible.
+Provide feedback from current clients to encourage contact.
+Make contacting as simple as possible (Contact forma and alternate methods of contact)
 
-## Updates Since The Instructional Video
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Features
+In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+##### Existing Features
+Feature 1 - Nav Bar
+Nav Bar allows simple and efficient navigation to desired area of the web page. On clicking required area, page scrolls to related area on the web page.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Feature 2 - Contact form
+Contact Form - simply requires name and email address. Type field of "email" ensures valid email address is entered. Using the emailJS site/email templates. The forms submits to my personal email address. Within the emailJS template I have configured an automated response that would in real life provide a free guide.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Feature 3 - Footer
+Footer links to the National 3 Peaks website for in depth information/event organisation.
 
---------
+Feature 4 - Google Map 
 
-Happy coding!
+Google Map API integrated into web page. Markers added to show the location of the three peaks. Unable to figure out how to implement information windows. Also everytime moved the code to a seperate JS file, the map would not show.
+
+
+##### Features Left to Implement
+Better use of the Google Maps API to show more information on the locations.
+
+
+
+### Technologies Used
+In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+
+HTML
+CSS
+Fontawesome: https://fontawesome.com/
+Use of basic icons in the services section and faq section.
+google fonts: https://fonts.google.com/
+To enable the import and use of different font types.
+Bootstrap: https://getbootstrap.com/docs/4.4/getting-started/introduction/
+Used to implement grid layout for simple web page layout and design. Further features taken from site to incorporate into website.
+
+JavaScript
+
+Google Maps API
+EmailJS 
+
+
+### Testing
+
+
+### Deployment
+
+Project published to GitHub Pages via the GitHub website.
+
+This was done by navigating to the Repository.
+Settings
+Scrolling to GitHub Pages Section
+Publish.
+
+### Credits
+
+Content
+The code for the FAQ section was copied from https://mdbootstrap.com/docs/jquery/javascript/accordion/
+The code for the Contact form was taken from https://getbootstrap.com/docs/4.4/components/forms/
+Other parts of the code were tailored from examples found at:
+
+https://getbootstrap.com/docs/4.4/
+https://www.w3schools.com 
+https://developers.google.com/maps/documentation
+https://www.emailjs.com/docs
+
+### Media
+
+Photos sourced from:
+unsplash.com
+
+
